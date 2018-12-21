@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp1.AboutUsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="About Us" Height="334.138" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="img/737.png"/>
+            </Grid.Background>
+
+            <Image Source="img/about-us-min.png" Margin="0,-54,-21,-48" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button x:Name="button" Content="DONATE" HorizontalAlignment="Left" Margin="622,234,0,0" VerticalAlignment="Top" Width="143" BorderBrush="{x:Null}" Height="45" FontSize="22">
+                <Button.Background>
+                    <ImageBrush ImageSource="img/abi.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>
